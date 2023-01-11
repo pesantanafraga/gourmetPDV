@@ -1,0 +1,37 @@
+CREATE TABLE Funcionario (
+  IdFunc int identity (1,1),
+  nomeFunc  varchar(50) not null,
+  cpf  char(11) unique not null,
+  celular  char (11),
+  login  varchar(45) unique not null,
+  senha varchar(15) not null,
+  perfil  varchar(10) not null,
+  constraint pk_funcionario PRIMARY KEY (IdFunc)
+)
+
+-----------------------------------------------------
+
+CREATE TABLE ProdutoFinal (
+IdProduto int identity (1,1),
+nomeProduto varchar(50) not null,
+tipoProduto varchar(15) not null,
+quantidade int not null,
+valor numeric(5,2) not null,
+constraint pk_produto PRIMARY KEY (IdProduto)
+)
+
+-----------------------------------------------------
+
+CREATE TABLE Pedido (
+  IdPedido int identity(1,1),
+  nomeCliente varchar (100),
+  telefoneCliente char(11),
+  IdProduto int not null,
+  IdFunc int not null,
+  constraint pk_pedido PRIMARY KEY (IdPedido),
+  constraint fk_pedido_produtofinal foreign key (IdProduto) references ProdutoFinal (IdProduto),
+  constraint fk_pedido_funcionario foreign key (IdFunc) references Funcionario (IdFunc)
+)
+
+-----------------------------------------------------
+

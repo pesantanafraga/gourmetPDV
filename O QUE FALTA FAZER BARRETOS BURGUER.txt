@@ -1,0 +1,7 @@
+Criar a tabela insumo e insumoProdutoFinal(para o lanche)
+
+criar tela para os adicionais, criar as procedures para tela de venda, adicionais
+
+tirar menu das telas e deixar somente a principal com o menu -- OK
+
+criar procedures para os relatórios primeiro porque será mais fácil..

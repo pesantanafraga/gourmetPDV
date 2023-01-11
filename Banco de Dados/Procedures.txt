@@ -1,0 +1,200 @@
+create procedure ps_Login
+--Parâmetros
+@login varchar(45),
+@senha varchar(15)
+as
+--Corpo
+select login,senha from Funcionario
+where login=@login and senha=@senha
+
+-----------------------------------------------
+
+create procedure pi_Funcionario
+@nomeFunc varchar(50),
+@cpf char(11),
+@celular char(11),
+@login varchar(45),
+@senha varchar(15),
+@perfil varchar(10)
+
+as
+
+insert into Funcionario (nomeFunc,cpf,celular,login,senha,perfil)
+values (@nomeFunc,@cpf,@celular,@login,@senha,@perfil);
+GO
+
+-----------------------------------------------
+
+create procedure pd_Funcionario
+@cpf char(11)
+
+as
+
+delete from Funcionario
+where cpf=@cpf;
+GO
+
+-----------------------------------------------
+
+create procedure pu_Funcionario
+--@IdFunc int,
+--@nomeFunc varchar(50),
+--@celular char(11),
+--@senha varchar(15),
+--@perfil varchar(10)
+
+--as
+
+--update Funcionario
+--set nomeFunc=@nomeFunc,
+--celular=@celular,
+--senha=@senha,
+--perfil=@perfil
+--where IdFunc=@IdFunc
+
+--GO
+
+-----------------------------------------------
+
+--create procedure ps_Funcionario
+--@nomeFunc varchar(50)
+
+--as
+
+--select * from Funcionario
+--where nomeFunc like '%' + @nomeFunc + '%'
+--order by nomeFunc asc
+
+--GO
+
+-----------------------------------------------
+
+create procedure pi_Produto
+@nomeProduto varchar(50),
+@tipoProduto varchar(15),
+@quantidade int,
+@valor numeric(5,2)
+
+as
+
+insert into ProdutoFinal (nomeProduto,tipoProduto,quantidade,valor)
+values(@nomeProduto,@tipoProduto,@quantidade,@valor)
+
+GO
+
+-----------------------------------------------
+
+create procedure pd_Produto
+@IdProduto int
+
+as
+
+delete from ProdutoFinal
+where IdProduto=@IdProduto
+
+GO
+
+-----------------------------------------------
+
+create procedure pu_Produto
+@nomeProduto varchar(50),
+@tipoProduto varchar(15),
+@quantidade int,
+@valor numeric(5,2)
+
+as
+
+update ProdutoFinal
+set nomeProduto = @nomeProduto,
+tipoProduto=@tipoProduto,
+quantidade=@quantidade,
+valor=@valor
+where nomeProduto=@nomeProduto
+
+GO
+
+-----------------------------------------------
+
+create procedure ps_Produto
+
+as
+
+select * from ProdutoFinal
+
+GO
+
+-----------------------------------------------
+
+create procedure ps_ProdutoLanches
+
+as
+
+select * from ProdutoFinal
+where tipoProduto like 'Lanches'
+order by nomeProduto asc
+
+GO
+
+
+-----------------------------------------------
+
+create procedure ps_ProdutoSalgados
+
+as
+
+select * from ProdutoFinal
+where tipoProduto like 'Salgados'
+order by nomeProduto asc
+
+GO
+
+-----------------------------------------------
+
+create procedure ps_ProdutoPorcoes
+
+as
+
+select * from ProdutoFinal
+where tipoProduto like 'Porções'
+order by nomeProduto asc
+
+GO
+
+-----------------------------------------------
+
+create procedure ps_ProdutoMolhos
+
+as
+
+select * from ProdutoFinal
+where tipoProduto like 'Molhos'
+order by nomeProduto asc
+
+GO
+
+-----------------------------------------------
+
+create procedure ps_ProdutoBebidas
+
+as
+
+select * from ProdutoFinal
+where tipoProduto like 'Bebidas'
+order by nomeProduto asc
+
+GO
+
+-----------------------------------------------
+
+create procedure ps_FuncionarioListar
+
+
+as
+
+select * from Funcionario
+
+order by nomeFunc asc
+
+GO
+
+-----------------------------------------------
