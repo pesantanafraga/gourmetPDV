@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estoque));
             this.lblNomeProdutoEstoque = new System.Windows.Forms.Label();
             this.lblTipoProdutoEstoque = new System.Windows.Forms.Label();
             this.lblQuantidadeProdutoEstoque = new System.Windows.Forms.Label();
@@ -197,7 +196,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::PrjBarretosBurguerNovo.Properties.Resources.logogenerico;
             this.pictureBox1.Location = new System.Drawing.Point(16, 384);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(350, 249);
@@ -221,7 +220,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1284, 729);
             this.Controls.Add(this.btnBuscarEstoque);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvBuscarProdutoEstoque);

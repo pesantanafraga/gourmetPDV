@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acessar));
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtLogin = new System.Windows.Forms.TextBox();
@@ -44,21 +43,21 @@
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(630, 280);
+            this.lblLogin.Location = new System.Drawing.Point(349, 316);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(115, 42);
+            this.lblLogin.Size = new System.Drawing.Size(137, 42);
             this.lblLogin.TabIndex = 0;
-            this.lblLogin.Text = "Login";
+            this.lblLogin.Text = "Login :";
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(625, 391);
+            this.lblSenha.Location = new System.Drawing.Point(349, 428);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(132, 42);
+            this.lblSenha.Size = new System.Drawing.Size(154, 42);
             this.lblSenha.TabIndex = 0;
-            this.lblSenha.Text = "Senha";
+            this.lblSenha.Text = "Senha :";
             // 
             // txtLogin
             // 
@@ -66,7 +65,7 @@
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.Location = new System.Drawing.Point(529, 325);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(320, 33);
+            this.txtLogin.Size = new System.Drawing.Size(414, 33);
             this.txtLogin.TabIndex = 1;
             // 
             // txtSenha
@@ -75,14 +74,14 @@
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(529, 436);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(320, 33);
+            this.txtSenha.Size = new System.Drawing.Size(414, 33);
             this.txtSenha.TabIndex = 2;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
             // chkMostrarSenha
             // 
             this.chkMostrarSenha.AutoSize = true;
-            this.chkMostrarSenha.Location = new System.Drawing.Point(616, 494);
+            this.chkMostrarSenha.Location = new System.Drawing.Point(529, 486);
             this.chkMostrarSenha.Name = "chkMostrarSenha";
             this.chkMostrarSenha.Size = new System.Drawing.Size(146, 24);
             this.chkMostrarSenha.TabIndex = 0;
@@ -96,7 +95,7 @@
             this.btnEntrar.FlatAppearance.BorderSize = 0;
             this.btnEntrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.Location = new System.Drawing.Point(646, 539);
             this.btnEntrar.Name = "btnEntrar";
@@ -109,12 +108,12 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImage = global::PrjBarretosBurguerNovo.Properties.Resources.logogenerico;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(529, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(356, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(320, 237);
+            this.pictureBox1.Size = new System.Drawing.Size(587, 234);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -126,16 +125,16 @@
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label1.Location = new System.Drawing.Point(548, 689);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 15);
+            this.label1.Size = new System.Drawing.Size(273, 15);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Developed by SmartSolutions 2021-2022";
+            this.label1.Text = "Developed by Pedro Santana 2021 - 2023";
             // 
             // Acessar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1284, 729);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.chkMostrarSenha);
@@ -149,7 +148,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximumSize = new System.Drawing.Size(1366, 768);
-            this.MinimumSize = new System.Drawing.Size(1366, 768);
+            this.MinimumSize = new System.Drawing.Size(1278, 718);
             this.Name = "Acessar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acessar";

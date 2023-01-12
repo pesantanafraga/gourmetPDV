@@ -103,9 +103,5 @@ namespace PrjBarretosBurguerNovo
                 txtSenha.UseSystemPasswordChar = true;
             }
         }
-
-
-       
-        
     }
 }
